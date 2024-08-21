@@ -1,0 +1,148 @@
+version 1: التسجيل والدخول 
+    +register_user(): void
+    +register_company(): void
+    +vertification_register(): void
+    +login(): void
+    +forget_password(): void
+    +confirm_forget(): void
+    +update_password(): void 
+    +logout(): void 
+    +create_profile(): void (Advisor)
+    +complete_register(): void (user)
+    +create_profile(): void (company)
+
+version 2 : فرص التوظيف 
+    Cooridinator: 
+    +user_job_requests(): void 
+    +filter_user_job_requests(): void 
+    +send_user_job_requests(): void
+
+    +company_job_requests(): void 
+    +acpt_rej_company_job_requests(): void 
+	
+    Company : 
+    +crud_job(): void   
+    +clone_job(): void  
+    +current_jobs(): void
+    +finite_jobs(): void
+    +details_requests_job(): void
+    +details_user_request_job(): void
+    +accept_refuse_request_job(): void
+
+    user :
+    +jobs_all(): void
+    +jobs_filter(): void
+    +my_jobs(): void 
+    +job_details(): void
+    +my_jobs_applied(): void
+    +apply_job(): void
+
+
+    version 3:فرص التدريب
+    Company:
+    +crud_course(): void 
+    +clone_course(): void 
+    +current_courses(): void
+    +finite_courses(): void
+    +details_requests_course(): void
+    +details_user_request_course(): void
+    +accept_refuse_user_request_course(): void
+    +review_training(): void
+
+    User:
+    +all_courses(): void
+    +filter_courses(): void
+    +search_course(): void
+    +details_course(): void
+    +apply_course(): void
+    +my_courses_applied(): void
+
+    version 4 :ادارة البروفايل وتعديله
+    Company:
+        +show_profile(): void
+        +update_profile(): void
+
+        Advisor :
+        +show_profile(): void 
+    +update_profile(): void
+
+        User:
+    +create_cv(): void
+    +upload_cv(): void
+    +download_cv(): void
+    +show_profile(): void 
+    +update_profile(): void
+    +update_cv(): void
+
+    version 5 :   استبيانات + تقييم
+        Company:
+    +crud_postings(): void 
+
+    Advisor:
+    +Cons_user_review(): void
+    +Cons_comapny_review(): void
+    
+    User: 
+    +rate_company(): void
+    +surveys(): void
+    +survey_details(): void
+    +survey_apply(): void
+   	
+    version 6: notification 
+    +send(): void
+    +toArray(): void
+    +toDatabase(): void
+    +toMail(): void
+    +toBroadcast(): void
+    +notify(): void
+    +notifications(): void
+    +routeNotification(): void
+
+التوابع الي ضلت : 
+Admin : 
+ +statistics(): void
+    +waiting_companies(): void
+    +accepted_companies(): void
+    +rejecteded_companies(): void
+    +banned_companies(): void
+    +acpt_rej_company(): void
+    +delete_company(): void
+    +company_details(): void
+    +download_company_file(): void
+    +active_users(): void
+    +banned_users(): void
+    +user_details(): void
+    +block_active_user(): void
+    +delete_user(): void
+    +crud_advisors(): void
+    +crud_coordinators(): void 
+Cooridinator:
+    +user_consulation(): void
+    +send_user_consulation(): void
+
+    +company_consulation(): void
+    +send_company_consulation(): void
+Advisor :
+ +Cons_comapny_waiting(): void
+    +Cons_comapny_applied(): void
+    +Cons_comapny_details(): void
+
+    +Cons_user_waiting(): void
+    +Cons_user_applied(): void
+    +Cons_user_details(): void
+
+    +Cons_user_review(): void
+    +Cons_comapny_review(): void
+       + المحادثة
+
+Company:
+ +apply_consolution(): void
+User : 
+  +apply_consolution(): void
+
+    +all_companies(): void
+    +my_companies(): void
+    +details_company(): void
+    +follow_unfollow(): void
+    +search_company(): void
+    + المحادثة

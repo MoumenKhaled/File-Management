@@ -1,0 +1,141 @@
+APIS :
+---------------------
+all request required token. (user include num_fies_checkin)
+--------- Add File(Public):----------------------- Done --------------------------------------
+request : file - name -  status(free)
+response :
+
+
+
+
+--------- List_File_public :----------------------- Done --------------------------------------
+request : -  
+response : all files public (from table (public file)) - [id - name - file - owner_id- created_at - status - user_name(if file used)]
+
+
+
+
+------- List myfiles(in public) :----------------------- Done --------------------------------------
+request : - 
+response : [id - name - file - owner_id- created_at - status - user_name(if file used)]
+
+
+
+
+-------- Check-in-public: (just if file=free)  2 request-----------------------Done------------------------
+request : id_file  list_ids     with type(public - group)
+response :
+
+
+
+
+
+-------- Check-in-list-public: (just if file=free)  2 request
+request : list_ids            with type(public - group)
+response :
+
+
+-------- Check-out-public:-----------------------------------------------Done---------------------------------
+request : id_file 
+response :
+----------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------
+--------- Create Group : -------------------------------------------Done------------------------------------------
+request : name
+response : return details group (id - owner_id - name)
+
+
+
+
+--------- Add File(to Group) :  (just if owner_group )--------------------------Done--------------------------------
+request : group_id  file name  status(free)
+response : - 
+
+
+
+
+
+--------- Delete File (from group) : (just if user owner file - must file status free )-------------------Done--------------------------
+request : id_file
+response : -
+
+
+
+
+
+
+
+--------- Add/Delete User to Group (delete : just if user not usedany file):---------------------------Done------------------------------
+request : user_id  group_id 
+response : - 
+
+
+
+
+--------- List User in myGroup : --------------------------------------------Done--------------------------
+request :  group_id 
+response : all users in this group just(id - name)
+
+
+
+
+--------- Detais Group :--------------------------------------------------------Done------------------------
+request : group_id
+response : id name owner_id ->with files(id group_id file name) [id - file - user_id- created_at - status - user_name(if file used)]
+
+
+
+
+-------created Groups(created ): ------------------------------------------------------------Done--------------------
+request : - 
+response : all groups (created) [id name owner_id]
+
+
+
+
+
+------- Joined_Groups( joined ):------------------------------------------------------Done------------------------------
+request : - 
+response : all groups (created - joined) [id name owner_id]
+
+
+
+
+
+-------- List Users :----------------------------------------------------Done--------------------------------------------
+request : -
+response : all users just(id - name)
+
+
+
+--------read file :----------------------------------------------------Done---------------------------------------------
+request : id_file , group_id
+response :
+
+
+
+
+-------- Check-in: (just if file=free)  2 request-----------------------------Done-------------------------------------
+request : id_file with type(public - group)
+response :
+
+
+
+-------- Check-in-list: (just if file=free)  2 request
+request :   list_ids            with type(public - group)
+response :
+
+
+-------- Check-out:-----------------------------------------------------------Done---------------------------------------
+request : id_file status 
+response :
+
+
+
+
+----------
+reports :
+report user :
+report file :
+---------------------------------
+------------------------------------
